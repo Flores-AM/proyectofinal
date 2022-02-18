@@ -1,0 +1,234 @@
+main {
+  .caja-1 {
+    margin: 10rem 0;
+    display: flex;
+    flex: 1 2;
+    width: 100%;
+    height: 50rem;
+    .container {
+      height: 40rem;
+    }
+    .datos {
+      margin: 2rem;
+      text-align: left;
+      h1,
+      p,
+      .negrita {
+        margin: 0;
+        padding: 0;
+        margin-top: 2rem;
+      }
+      h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 2rem;
+      }
+      .negrita {
+        width: 50%;
+        display: flex;
+        justify-content: start;
+        font-weight: bold;
+        gap: 2rem;
+      }
+    }
+  }
+  .caja-2 {
+    width: 100%;
+    height: 100vh;
+    .azul {
+      width: 100%;
+      height: 50%;
+      background-color: #282842;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h2 {
+        color: white;
+        font-size: 4rem;
+        width: 60%;
+        margin: 0 auto;
+      }
+    }
+    .imagenes {
+      margin: 0 auto;
+      padding: 0;
+      width: 100%;
+      display: flex;
+      .foto1 {
+        background-image: url(../img/imagen1.jpeg);
+      }
+      .foto2 {
+        background-image: url(../img/imagen2.png);
+      }
+      .foto3 {
+        background-image: url(../img/imagen3.jpeg);
+      }
+      .foto4 {
+        background-image: url(../img/imagen4.png);
+      }
+      .foto1,
+      .foto2,
+      .foto3,
+      .foto4 {
+        height: 30rem;
+        width: 25%;
+        background-size: cover;
+        background-position: center center;
+      }
+    }
+  }
+  .caja-3 {
+    width: 75%;
+    margin: 15rem auto;
+    margin-top: 10rem;
+    h3 {
+      color: rgb(71, 71, 71);
+      font-size: 4rem;
+      font-family: "PT Sans Narrow", sans-serif;
+    }
+    p {
+      font-size: 2rem;
+      color: rgb(71, 71, 71);
+      span {
+        font-weight: bold;
+        color: black;
+      }
+    }
+  }
+  .caja-4 {
+    display: flex;
+    background-color: #282842;
+    color: #fff;
+    text-align: left;
+    height: auto;
+    .datos3 {
+      width: 60%;
+      h4,
+      p {
+        margin: 2rem 1rem;
+        padding: 0;
+      }
+      h4 {
+        font-family: "PT Sans Narrow", sans-serif;
+        font-size: 3rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+    .img-globopuerto {
+      height: 40rem;
+      width: 40%;
+      background-size: cover;
+      background-position: center center;
+      background-image: url(../img/globopuerto.jpeg);
+    }
+  }
+  .caja-5 {
+    display: flex;
+    width: 100%;
+    .img-pilotos {
+      background-image: url(../img/pilotos.jpeg);
+      background-size: cover;
+      background-position: center center;
+      width: 50%;
+      height: 50rem;
+    }
+    .datoss {
+      width: 50%;
+      .negrita {
+        font-weight: bold;
+      }
+    }
+  }
+  .caja-6 {
+    display: flex;
+    gap: 2rem;
+    margin: 15rem 0 5rem 0;
+    .cajita {
+      width: 33.3%;
+      display: flex;
+      flex-direction: column;
+      .imgseg {
+        background-image: url(../img/maxs.jpeg);
+      }
+      .imgrs {
+        background-image: url(../img/resps.jpeg);
+      }
+      .imgid {
+        background-image: url(../img/incyd.png);
+      }
+      .imgseg,
+      .imgrs,
+      .imgid {
+        width: 100%;
+        height: 30rem;
+        background-position: center center;
+        background-size: cover;
+      }
+      .negrita {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    .caja-1 {
+      flex-direction: column-reverse;
+      height: auto;
+      .datos {
+        text-align: center;
+        .negrita {
+          width: 100%;
+        }
+      }
+    }
+    .caja-2 {
+      height: 80vh;
+      .azul {
+        h2 {
+          font-size: 3rem;
+        }
+      }
+      .imagenes {
+        .foto1,
+        .foto2,
+        .foto3,
+        .foto4 {
+          height: 15rem;
+        }
+      }
+    }
+    .caja-4 {
+      flex-direction: column;
+      .datos3 {
+        width: 100%;
+        text-align: center;
+      }
+      .img-globopuerto {
+        width: 100%;
+      }
+    }
+    .caja-5 {
+      flex-direction: column-reverse;
+      .img-pilotos {
+        width: 100%;
+        height: 35rem;
+      }
+      .datoss {
+        width: 100%;
+      }
+    }
+    .caja-6 {
+      flex-direction: column;
+      .cajita {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,970 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  font-family: "PT Sans Narrow", sans-serif;
+  background-color: #f5f5f5;
+}
+
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  /*background-color: #f5f5f5;*/
+  background-color: #e7e7e7;
+  border-bottom: 0.1rem solid #918f8f;
+  z-index: 20;
+}
+
+.navbar .inicio {
+  font-size: 5rem;
+}
+
+.navbar .inicio a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar .inicio a span {
+  font-weight: bold;
+}
+
+.navbar .inicio a:hover {
+  color: #000;
+}
+
+.navbar .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+  padding: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.navbar .nav li {
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.navbar .nav li a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #000;
+}
+
+.navbar .nav li:hover {
+  border: 0.1rem solid #fff;
+  -webkit-box-shadow: 0px 0px 9px 2px #f0f0f0;
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.navbar .nav li:hover a {
+  color: #474747;
+}
+
+.navbar .nav li:active {
+  -webkit-transform: translateY(0.3rem);
+          transform: translateY(0.3rem);
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+footer .top {
+  border-top: 0.1rem solid #b6b3b3;
+  background-color: #e7e7e7;
+}
+
+footer .top span {
+  font-weight: bold;
+}
+
+footer .redes-flex {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+footer .redes-flex .ig,
+footer .redes-flex .wpp,
+footer .redes-flex .tw {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  text-align: center;
+  border: 0.1rem solid rgba(255, 255, 255, 0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer .redes-flex .ig svg,
+footer .redes-flex .wpp svg,
+footer .redes-flex .tw svg {
+  margin-top: 0.9rem;
+}
+
+footer .redes-flex .ig:hover,
+footer .redes-flex .wpp:hover,
+footer .redes-flex .tw:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 9px 2px #f0f0f0;
+  border: 0.1rem solid white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .redes-flex {
+    width: 40%;
+  }
+}
+
+header .fondo-globo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.65)), to(rgba(5, 7, 12, 0.65))), url(../img/globo3.jpeg);
+  background: linear-gradient(rgba(5, 7, 12, 0.65), rgba(5, 7, 12, 0.65)), url(../img/globo3.jpeg);
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50rem;
+  color: #f5f5f5;
+}
+
+header .fondo-globo h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+header .fondo-globo h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+}
+
+main {
+  text-align: center;
+}
+
+main h3,
+main h4,
+main h5 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  margin: 5rem 0;
+}
+
+main p {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+main .p5 {
+  padding: 0 0 5rem 0;
+}
+
+main .img {
+  margin: 5rem auto;
+  width: 80%;
+  height: 50rem;
+  background-image: url(../img/globo1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+main .img2 {
+  background-image: url(../img/globo2.jpeg);
+}
+
+@media (max-width: 768px) {
+  main .img {
+    height: 25rem;
+  }
+}
+
+main .imgz {
+  background-image: url(../img/zeppelin.jpeg);
+}
+
+main .nodir {
+  background-image: url(../img/nodir.jpeg);
+}
+
+main .decant {
+  background-image: url(../img/globodec.jpeg);
+}
+
+main .degas {
+  background-image: url(../img/degas.jpeg);
+}
+
+main .imgz,
+main .nodir,
+main .decant,
+main .degas,
+main .gazul {
+  background-size: cover;
+  background-position: center center;
+}
+
+main .gazul {
+  background-image: url(../img/gazul.jpeg);
+  background-position: center top;
+}
+
+@media (max-width: 768px) {
+  main .imgz,
+  main .nodir,
+  main .decant,
+  main .degas,
+  main .gazul {
+    height: 25rem;
+  }
+}
+
+main .caja-1 {
+  margin: 10rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 2;
+          flex: 1 2;
+  width: 100%;
+  height: 50rem;
+}
+
+main .caja-1 .container {
+  height: 40rem;
+}
+
+main .caja-1 .datos {
+  margin: 2rem;
+  text-align: left;
+}
+
+main .caja-1 .datos h1,
+main .caja-1 .datos p,
+main .caja-1 .datos .negrita {
+  margin: 0;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+main .caja-1 .datos h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+main .caja-1 .datos p {
+  font-size: 2rem;
+}
+
+main .caja-1 .datos .negrita {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  font-weight: bold;
+  gap: 2rem;
+}
+
+main .caja-2 {
+  width: 100%;
+  height: 100vh;
+}
+
+main .caja-2 .azul {
+  width: 100%;
+  height: 50%;
+  background-color: #282842;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .caja-2 .azul h2 {
+  color: white;
+  font-size: 4rem;
+  width: 60%;
+  margin: 0 auto;
+}
+
+main .caja-2 .imagenes {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .caja-2 .imagenes .foto1 {
+  background-image: url(../img/imagen1.jpeg);
+}
+
+main .caja-2 .imagenes .foto2 {
+  background-image: url(../img/imagen2.png);
+}
+
+main .caja-2 .imagenes .foto3 {
+  background-image: url(../img/imagen3.jpeg);
+}
+
+main .caja-2 .imagenes .foto4 {
+  background-image: url(../img/imagen4.png);
+}
+
+main .caja-2 .imagenes .foto1,
+main .caja-2 .imagenes .foto2,
+main .caja-2 .imagenes .foto3,
+main .caja-2 .imagenes .foto4 {
+  height: 30rem;
+  width: 25%;
+  background-size: cover;
+  background-position: center center;
+}
+
+main .caja-3 {
+  width: 75%;
+  margin: 15rem auto;
+  margin-top: 10rem;
+}
+
+main .caja-3 h3 {
+  color: #474747;
+  font-size: 4rem;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+main .caja-3 p {
+  font-size: 2rem;
+  color: #474747;
+}
+
+main .caja-3 p span {
+  font-weight: bold;
+  color: black;
+}
+
+main .caja-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #282842;
+  color: #fff;
+  text-align: left;
+  height: auto;
+}
+
+main .caja-4 .datos3 {
+  width: 60%;
+}
+
+main .caja-4 .datos3 h4,
+main .caja-4 .datos3 p {
+  margin: 2rem 1rem;
+  padding: 0;
+}
+
+main .caja-4 .datos3 h4 {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 3rem;
+}
+
+main .caja-4 .datos3 p {
+  font-size: 2rem;
+}
+
+main .caja-4 .img-globopuerto {
+  height: 40rem;
+  width: 40%;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../img/globopuerto.jpeg);
+}
+
+main .caja-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+main .caja-5 .img-pilotos {
+  background-image: url(../img/pilotos.jpeg);
+  background-size: cover;
+  background-position: center center;
+  width: 50%;
+  height: 50rem;
+}
+
+main .caja-5 .datoss {
+  width: 50%;
+}
+
+main .caja-5 .datoss .negrita {
+  font-weight: bold;
+}
+
+main .caja-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  margin: 15rem 0 5rem 0;
+}
+
+main .caja-6 .cajita {
+  width: 33.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .caja-6 .cajita .imgseg {
+  background-image: url(../img/maxs.jpeg);
+}
+
+main .caja-6 .cajita .imgrs {
+  background-image: url(../img/resps.jpeg);
+}
+
+main .caja-6 .cajita .imgid {
+  background-image: url(../img/incyd.png);
+}
+
+main .caja-6 .cajita .imgseg,
+main .caja-6 .cajita .imgrs,
+main .caja-6 .cajita .imgid {
+  width: 100%;
+  height: 30rem;
+  background-position: center center;
+  background-size: cover;
+}
+
+main .caja-6 .cajita .negrita {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  main .caja-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: auto;
+  }
+  main .caja-1 .datos {
+    text-align: center;
+  }
+  main .caja-1 .datos .negrita {
+    width: 100%;
+  }
+  main .caja-2 {
+    height: 80vh;
+  }
+  main .caja-2 .azul h2 {
+    font-size: 3rem;
+  }
+  main .caja-2 .imagenes .foto1,
+  main .caja-2 .imagenes .foto2,
+  main .caja-2 .imagenes .foto3,
+  main .caja-2 .imagenes .foto4 {
+    height: 15rem;
+  }
+  main .caja-4 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .caja-4 .datos3 {
+    width: 100%;
+    text-align: center;
+  }
+  main .caja-4 .img-globopuerto {
+    width: 100%;
+  }
+  main .caja-5 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main .caja-5 .img-pilotos {
+    width: 100%;
+    height: 35rem;
+  }
+  main .caja-5 .datoss {
+    width: 100%;
+  }
+  main .caja-6 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .caja-6 .cajita {
+    width: 100%;
+  }
+}
+
+.precios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  /* From cssbuttons.io */
+}
+
+.precios .caja {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.precios .cajita {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  width: 33.3%;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.precios .card {
+  margin: 0 auto;
+  width: 80%;
+  height: 40rem;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.precios .card::before {
+  content: "Vuelo compartido $15.000";
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: #333333;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.precios .card div {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+  cursor: pointer;
+  z-index: 10;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  background-color: #fff;
+  background-image: url(../img/imagen3.jpeg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.precios .card:hover div {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.precios .card2::before {
+  content: "Vuelo Privado Familiar $30.000";
+}
+
+.precios .card2 div {
+  background-image: url(../img/familia.jpeg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.precios .card3::before {
+  content: "Vuelo Privado Pareja $25.000";
+}
+
+.precios .card3 div {
+  background-image: url(../img/pareja.jpeg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.precios button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.precios button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+.precios button.learn-more .circle {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+
+.precios button.learn-more .circle .icon {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+.precios button.learn-more .circle .icon.arrow {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+.precios button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.precios button.learn-more .button-text {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.precios button:hover .circle {
+  width: 100%;
+}
+
+.precios button:hover .circle .icon.arrow {
+  background: #fff;
+  -webkit-transform: translate(1rem, 0);
+          transform: translate(1rem, 0);
+}
+
+.precios button:hover .button-text {
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .precios .cajita {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .precios {
+    height: auto;
+  }
+  .precios .caja {
+    margin: 10rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5rem;
+  }
+  .precios .cajita {
+    width: 70%;
+  }
+}
+
+.contacto {
+  width: 100%;
+  height: 100vh;
+  margin: 10rem 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* From cssbuttons.io by @adamgiebl */
+}
+
+.contacto .imgn {
+  background-image: url(../img/contacto2.jpeg);
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+  width: 70%;
+  height: 40rem;
+}
+
+.contacto .form {
+  border: 0.1rem solid #dad8d8;
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  bottom: 10rem;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+
+.contacto .form .container {
+  padding: 2rem;
+}
+
+.contacto button {
+  width: 12rem;
+  margin: 3rem auto;
+  font-family: inherit;
+  font-size: 20px;
+  background: rgba(87, 90, 74, 0.719);
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.contacto button span {
+  display: block;
+  margin-left: 0.3em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.contacto button svg {
+  display: block;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.contacto button:hover .svg-wrapper {
+  -webkit-animation: fly-1 0.6s ease-in-out infinite alternate;
+          animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.contacto button:hover svg {
+  -webkit-transform: translateX(1.2em) rotate(45deg) scale(1.1);
+          transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.contacto button:hover span {
+  -webkit-transform: translateX(5em);
+          transform: translateX(5em);
+}
+
+.contacto button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+@-webkit-keyframes fly-1 {
+  from {
+    -webkit-transform: translateY(0.1em);
+            transform: translateY(0.1em);
+  }
+  to {
+    -webkit-transform: translateY(-0.1em);
+            transform: translateY(-0.1em);
+  }
+}
+
+@keyframes fly-1 {
+  from {
+    -webkit-transform: translateY(0.1em);
+            transform: translateY(0.1em);
+  }
+  to {
+    -webkit-transform: translateY(-0.1em);
+            transform: translateY(-0.1em);
+  }
+}
+
+@media (max-width: 768px) {
+  .contacto .imgn {
+    width: 95%;
+  }
+  .contacto .form {
+    width: 85%;
+  }
+}
+
+.redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3rem;
+  text-align: center;
+  padding: 15rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.redes .uwunt {
+  background-image: url(../img/uwunt.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30rem;
+  height: 40rem;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+main {
+  .imgz {
+    background-image: url(../img/zeppelin.jpeg);
+  }
+  .nodir {
+    background-image: url(../img/nodir.jpeg);
+  }
+  .decant {
+    background-image: url(../img/globodec.jpeg);
+  }
+  .degas {
+    background-image: url(../img/degas.jpeg);
+  }
+  .imgz,
+  .nodir,
+  .decant,
+  .degas,
+  .gazul {
+    background-size: cover;
+    background-position: center center;
+  }
+  .gazul {
+    background-image: url(../img/gazul.jpeg);
+    background-position: center top;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    .imgz,
+    .nodir,
+    .decant,
+    .degas,
+    .gazul {
+      height: 25rem;
+    }
+  }
+}
