@@ -287,10 +287,6 @@ main .caja-1 {
   width: 100%;
 }
 
-main .caja-1 .container {
-  height: 40rem;
-}
-
 main .caja-1 .datos {
   margin: 2rem;
   text-align: left;
